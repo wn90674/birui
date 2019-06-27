@@ -50,7 +50,7 @@ export default {
           ]
         },
         {
-          title: '新闻动态',
+          title: '产品试用',
           list: [
             {
               title: '试用申请',

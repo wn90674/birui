@@ -1,4 +1,5 @@
-ba<template>
+<template>
+<!-- 财务管理 -->
   <div>
     <h2 class="title br__primary">Excel财务会计的应用</h2>
     <div class="content">
