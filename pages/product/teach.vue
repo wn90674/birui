@@ -1,4 +1,5 @@
 <template>
+<!-- 教学模块 -->
   <div>
     <section>
       <h2 class="title br__primary">彼瑞iMAP - 教学</h2>

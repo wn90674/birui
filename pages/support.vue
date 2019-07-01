@@ -23,7 +23,7 @@
 // 背景图片映射
 const mapBg = new Map([
   // 产品操作手册
-  ['/support', '/img/about/about.jpg'],
+  ['/support/', '/img/about/about.jpg'],
   // 试用申请
   ['/support/apply', '/img/product/bigData.jpg'],
   // 企业动态
@@ -41,7 +41,7 @@ export default {
           list: [
             {
               title: '产品操作手册',
-              link: '/support',
+              link: '/support/',
             },
             {
               title: '常见问题',
@@ -50,7 +50,7 @@ export default {
           ]
         },
         {
-          title: '新闻动态',
+          title: '产品试用',
           list: [
             {
               title: '试用申请',

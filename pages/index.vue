@@ -1,10 +1,8 @@
 <template>
-  <div class="container">
-    <section class>
-      <Banner :list="banners"/>
-    </section>
-    <a href="https://jinshuju.net/f/k9Ndh2" class="trail-link" title="试用申请" target="_blank">试用申请</a>
-  </div>
+  <section class="container">
+    <Banner :list="banners"/>
+    <el-button @click="fn_test">button</el-button>
+  </section>
 </template>
 
 <script>
@@ -41,8 +39,8 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;

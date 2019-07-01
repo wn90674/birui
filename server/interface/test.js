@@ -8,7 +8,7 @@ router.use(function timeLog(req, res, next) {
 });
 
 router.get('/test', (req, res) => {
-    res.end('test')
+    res.status(504).end()
 })
 router.get('/test2', (req, res) => {
     // res.status(200).end()
