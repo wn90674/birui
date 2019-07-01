@@ -4,7 +4,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title:'彼瑞教育',
     meta: [{
         charset: 'utf-8'
       },
@@ -15,7 +15,11 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: '彼瑞教育'
+      },
+      {
+        name:'keywords',
+        content:'教育，产品，平台，个性化开发，管理会计，Excel课程，大数据，财务分析，审计，财务'
       }
     ],
     link: [{
@@ -68,22 +72,12 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/markdownit',
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
-  markdownit: {
-    preset: 'default',
-    linkify: true,
-    breaks: true,
-    use: [
-      ['markdown-it-container', 'containerName'],
-      'markdown-it-attrs'
-    ]
-  },
   /*
    ** Build configuration
    */

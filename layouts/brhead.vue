@@ -27,23 +27,23 @@ export default {
       navList: [
         {
           title: '关于彼瑞',
-          link: '/about',
+          link: '/about/',
         },
         {
           title: '解决方案',
-          link: '/solution',
+          link: '/solution/',
         },
         {
           title: '产品',
-          link: '/product',
+          link: '/product/',
         },
         {
           title: '服务与支持',
-          link: '/support',
+          link: '/support/',
         },
         {
           title: '联系我们',
-          link: '/connect',
+          link: '/connect/',
         },
       ]
     }

@@ -23,9 +23,9 @@
 // 背景图片映射
 const mapBg = new Map([
   // 企业介绍
-  ['/about', '/img/about/about.jpg'],
+  ['/about/', '/img/about/about.jpg'],
   // 企业足迹
-  ['/about/trace', '/img/product/bigData.jpg'],
+  ['/about/trace', '/img/about/trace2.jpg'],
   // 企业动态
   ['/about/dynamic', '/img/about/dynamic.jpg'],
   // 行业动态
@@ -41,7 +41,7 @@ export default {
           list: [
             {
               title: '公司概况',
-              link: '/about',
+              link: '/about/',
             },
             {
               title: '彼瑞足迹',

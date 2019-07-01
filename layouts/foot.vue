@@ -51,10 +51,13 @@ export default {
   .left {
     flex: 3;
     h4.title {
-      height: 30px;
-      line-height: 30px;
-      border-bottom: 1px dashed #ccc;
       margin-bottom: 10px;
+      height: 30px;
+      text-align: left;
+      line-height: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      border-bottom: 1px dashed #ccc;
     }
     .intro {
       font-size: 12px;

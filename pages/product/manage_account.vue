@@ -1,5 +1,5 @@
 <template>
-<!-- 管理会计 -->
+  <!-- 管理会计 -->
   <div>
     <h2 class="title br__primary">Excel管理会计</h2>
     <div class="content">
@@ -39,7 +39,7 @@
 <script>
 export default {}
 </script>
-<style scoped>
+<style lang="scss" scoped>
 h2.title {
   padding: 10px 0;
   border-bottom: 3px solid;
@@ -50,8 +50,11 @@ h4.subtitle {
 .content {
   margin: 20px auto;
 }
-.educate-target li {
-  padding: 5px 0;
+.educate-target {
+  padding-left: 40px;
+  li {
+    padding: 5px 0;
+  }
 }
 </style>
 

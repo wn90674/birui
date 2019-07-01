@@ -22,7 +22,7 @@
 <script>
 // 背景图片映射
 const mapBg = new Map([
-  ['/product', '/img/product/platform.jpg'],
+  ['/product/', '/img/product/platform.jpg'],
   // 大数据
   ['/product/finance', '/img/product/bigData.jpg'],
   ['/product/audit', '/img/product/bigData.jpg'],
@@ -46,7 +46,7 @@ export default {
           list: [{
             title: '产品简介',
             isLeaf: true,
-            link: '/product',
+            link: '/product/',
           },]
         },
         {
