@@ -1,7 +1,7 @@
 <template>
   <!-- 服务与支持 -->
   <div>
-    <img :src="bgMap.get($route.fullPath)" width="100%" alt="关于彼瑞">
+    <img :src="bgMap.get($route.fullPath)" v-if="bgMap.get($route.fullPath)" width="100%" alt="关于彼瑞">
     <section class="br__container content">
       <aside class="nav">
         <dl v-for="(item,index) in navList" :key="index">
@@ -25,11 +25,9 @@ const mapBg = new Map([
   // 产品操作手册
   ['/support/', '/img/about/about.jpg'],
   // 试用申请
-  ['/support/apply', '/img/product/bigData.jpg'],
-  // 企业动态
-  ['/about/dynamic', '/img/about/dynamic.jpg'],
-  // 行业动态
-  ['/about/news', '/img/product/account.jpg'],
+  //['/support/apply', '/img/about/about.jpg'],
+  // 常见问题解答
+  ['/support/question', '/img/about/about.jpg'],
 ])
 export default {
   data: function () {
@@ -56,10 +54,10 @@ export default {
               title: '试用申请',
               link: '/support/apply',
             },
-            {
-              title: '行业动态',
-              link: '/about/news',
-            }
+            // {
+            //   title: '行业动态',
+            //   link: '/about/news',
+            // }
           ]
         }
       ]

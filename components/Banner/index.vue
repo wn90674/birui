@@ -7,8 +7,7 @@
         :key="index"
         :style="computeUrl(banner.url)"
       >
-        <p :class="['text',`text-${index}`]">{{banner.title}}</p>
-        <!-- <img :src="banner.url" width="100%"> -->
+        <pre :class="['text',`text-${index}`]">{{banner.title}}</pre>
       </div>
     </div>
     <!-- 前进/后退 -->
@@ -66,12 +65,24 @@ export default {
   height: 640px;
 }
 .text {
-  margin-top: 240px;
+  margin: 240px 0 0 200px;
   text-align: left;
-  text-indent: 200px;
   font-size: 32px;
+  line-height: 36px;
   font-weight: 700;
   color: #fff;
+  &.text-1 {
+    width: 580px;
+  }
+  &.text-0,&.text-2 {
+    margin-top: 270px;
+  }
+  &.text-3 {
+    width: 540px;
+  }
+  &.text-4{
+    width: 430px;
+  }
 }
 </style>
 
