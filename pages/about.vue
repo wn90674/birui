@@ -7,7 +7,7 @@
         <dl v-for="(item,index) in navList" :key="index">
           <dt>{{item.title}}</dt>
           <dd v-for="(i,idx) in item.list" :key="`${index}-${idx}`">
-            <a :href="i.link" :class="{br__primary:$route.fullPath===i.link}">{{i.title}}</a>
+            <nuxt-link :to="i.link" :class="{br__primary:$route.fullPath===i.link}">{{i.title}}</nuxt-link>
           </dd>
         </dl>
       </aside>
