@@ -67,8 +67,9 @@ export default {
 .text {
   margin: 240px 0 0 200px;
   text-align: left;
+  font-family: 'Microsoft YaHei';
   font-size: 32px;
-  line-height: 36px;
+  line-height: 48px;
   font-weight: 700;
   color: #fff;
   &.text-1 {
