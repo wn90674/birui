@@ -1,8 +1,8 @@
 <template>
   <div>
     <br-head></br-head>
-    <nuxt class="br_section"/>
-    <foot/>
+    <nuxt class="br_section" />
+    <foot />
   </div>
 </template>
 
@@ -21,8 +21,8 @@ export default {
 <style lang="scss">
 $primary-color: #0967b6 !global;
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -99,8 +99,10 @@ body,
   padding: 0;
 }
 .br_section {
-  font-size: 0;
-  /* background-color: rgba(200, 150, 100, 0.5); */
+  &:not(.markdown) {
+    font-size: 0;
+    /* background-color: rgba(200, 150, 100, 0.5); */
+  }
 }
 .br_section .title {
   margin: 0;

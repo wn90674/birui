@@ -77,6 +77,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/proxy',
+    '@nuxtjs/markdownit'
   ],
   /*
    ** Axios module configuration
@@ -96,6 +97,15 @@ module.exports = {
         '^/v1/':'/'
       }
     }
+  },
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    use: [
+      ['markdown-it-container','warning'],
+      'markdown-it-attrs'
+    ]
   },
   /*
    ** Build configuration
