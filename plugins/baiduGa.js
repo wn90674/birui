@@ -7,7 +7,7 @@ export default ({ app: { router }, store }) => {
       /*
       ** 告诉 GA 增加一个 PV
       */
-     if(process.env.NODE_ENV === 'production') {
+     if(process.client&&process.env.NODE_ENV === 'production') {
       try {
         window._hmt = window._hmt || []
         window._hmt.push(['_trackPageview', to.fullPath])
