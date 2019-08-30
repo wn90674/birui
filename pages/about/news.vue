@@ -14,19 +14,14 @@
 </template>
 
 <script>
-import axios from 'axios'
+
+import axios from "axios";
 export default {
-  data: function () {
-    return {
-      news: []
-    }
-  },
-  created() {
-    axios.get('/data/news.json').then(({ data }) => {
-      this.news = data.data;
-    })
-  },
-}
+  async asyncData({ params }) {
+    const {data} = await axios.get("/v1/news");
+    return { news:data};
+  }
+};
 </script>
 <style lang="scss" scoped>
 .news-container {
