@@ -7,7 +7,7 @@
         <dl v-for="(item,index) in navList" :key="index">
           <dt>{{item.title}}</dt>
           <dd v-for="(i,idx) in item.list" :key="`${index}-${idx}`">
-            <a :href="i.link" :class="{br__primary:$route.fullPath===i.link}">{{i.title}}</a>
+            <nuxt-link :to="i.link" :class="{br__primary:$route.fullPath===i.link}">{{i.title}}</nuxt-link>
           </dd>
         </dl>
       </aside>
@@ -23,9 +23,9 @@
 // 背景图片映射
 const mapBg = new Map([
   // 企业介绍
-  ['/about', '/img/about/about.jpg'],
+  ['/about/', '/img/about/about.jpg'],
   // 企业足迹
-  ['/about/trace', '/img/product/bigData.jpg'],
+  ['/about/trace', '/img/about/trace2.jpg'],
   // 企业动态
   ['/about/dynamic', '/img/about/dynamic.jpg'],
   // 行业动态
@@ -41,7 +41,7 @@ export default {
           list: [
             {
               title: '公司概况',
-              link: '/about',
+              link: '/about/',
             },
             {
               title: '彼瑞足迹',

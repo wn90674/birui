@@ -30,7 +30,7 @@
 <script>
 export default {}
 </script>
-<style scoped>
+<style lang="scss" scoped>
 h2.title {
   margin-top: 15px;
   padding: 10px 0;
@@ -42,8 +42,11 @@ h4.subtitle {
 .content {
   margin: 20px auto;
 }
-.educate-target li {
-  padding: 5px 0;
+.educate-target {
+  padding-left: 40px;
+  li {
+    padding: 5px 0;
+  }
 }
 </style>
 

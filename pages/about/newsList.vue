@@ -1,7 +1,5 @@
 <template>
-  <!-- 行业动态 -->
-  <div class="news-container">
-    <h2 class="title br__primary">行业新闻</h2>
+  <!-- 行业动态-新闻<服务端异步获取> -->
     <ul class="news">
       <li v-for="item in news" :key="item.date">
         <div class="left">
@@ -10,39 +8,28 @@
         </div>
       </li>
     </ul>
-  </div>
 </template>
 
 <script>
 import axios from 'axios'
 export default {
-  data: function () {
+  data:function() {
     return {
-      news: []
-    }
-  },
-  // created() {
-  //   axios.get('/data/news.json').then(({ data }) => {
-  //     this.news = data.data;
-  //   })
-  // }
-  async asyncData() {
-    const { data } = await axios.get('/v1/news')
-    return {
-      title: data
+      news:[]
     }
   },
   created() {
-    console.log(this.title)
+  debugger
+  },
+  async asyncData({ params }) {
+    let { data } = await axios.get(`/v1/news`)
+    debugger
+    console.log(data)
+    return { news: data.data }
   },
 }
 </script>
 <style lang="scss" scoped>
-.news-container {
-  h2.title {
-    padding: 15px 0;
-    border-bottom: 1px solid;
-  }
   .news {
     list-style: none;
     li {
@@ -65,5 +52,4 @@ export default {
       }
     }
   }
-}
 </style>

@@ -45,7 +45,7 @@
     <section class="case">
       <h3 class="title br__primary">提供面向组织、岗位、任务、学生的多维量化分析，洞察教与学的改进方向</h3>
       <img src="/img/product/exam/3.png" width="100%" alt="维度分析">
-    </section> -->
+    </section>-->
     <section>
       <h2 class="br__primary">行业案例</h2>
       <base-three :list="childLinks"></base-three>
@@ -118,6 +118,7 @@ h3 {
   .content {
     display: flex;
     position: relative;
+    padding-left: 40px;
     ul.list li {
       list-style: decimal;
       padding: 5px 0;
@@ -130,15 +131,13 @@ img.case {
   margin: 20px auto;
 }
 
-// 暂时废弃
 section.content {
   margin-top: 15px;
   background-color: rgba(9, 103, 182, 0.1);
   .post-list {
-    padding-left: 40px;
+    padding-left: 20px;
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    grid-gap: 15px;
     .post {
       list-style: none;
       margin: 20px 0;

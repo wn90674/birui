@@ -9,7 +9,7 @@
       <nav>
         <ul class="nav-list">
           <li v-for="(item,index) in navList" :key="index">
-            <a :href="item.link||'javascript:void(0)'" :class="{br__primary:isCurrentRoute(item.link)}">{{item.title}}</a>
+            <nuxt-link :to="item.link||'javascript:void(0)'" :class="{br__primary:isCurrentRoute(item.link)}">{{item.title}}</nuxt-link>
             <!-- <drop-down :list="item.list"></drop-down> -->
           </li>
         </ul>
@@ -27,23 +27,23 @@ export default {
       navList: [
         {
           title: '关于彼瑞',
-          link: '/about',
+          link: '/about/',
         },
         {
           title: '解决方案',
-          link: '/solution',
+          link: '/solution/',
         },
         {
           title: '产品',
-          link: '/product',
+          link: '/product/',
         },
         {
           title: '服务与支持',
-          link: '/support',
+          link: '/support/',
         },
         {
           title: '联系我们',
-          link: '/connect',
+          link: '/connect/',
         },
       ]
     }
