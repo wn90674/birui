@@ -13,18 +13,8 @@
 <script>
 import axios from 'axios'
 export default {
-  data:function() {
-    return {
-      news:[]
-    }
-  },
-  created() {
-  debugger
-  },
   async asyncData({ params }) {
     let { data } = await axios.get(`/v1/news`)
-    debugger
-    console.log(data)
     return { news: data.data }
   },
 }
