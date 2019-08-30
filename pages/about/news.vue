@@ -21,19 +21,10 @@ export default {
       news: []
     }
   },
-  // created() {
-  //   axios.get('/data/news.json').then(({ data }) => {
-  //     this.news = data.data;
-  //   })
-  // }
-  async asyncData() {
-    const { data } = await axios.get('/v1/news')
-    return {
-      title: data
-    }
-  },
   created() {
-    console.log(this.title)
+    axios.get('/data/news.json').then(({ data }) => {
+      this.news = data.data;
+    })
   },
 }
 </script>
