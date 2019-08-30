@@ -8,7 +8,7 @@ router.use(function timeLog(req, res, next) {
     if (/news/.test(req.url)) {
         console.log(req.url)
     }
-
+    
     next();
 });
 
@@ -16,18 +16,13 @@ router.get('/test', (req, res) => {
     res.send('ok')
     // res.status(504).end()
 })
-router.get('/test2', (req, res) => {
-    // res.status(200).end()
-    res.send('1111')
-})
-// router.get('/news', (req, res) => {
-//     res.send(news)
-// })
 
+// 新闻状态
 router.get('/v1/news',(req,res)=>{
-    console.log(news)
     res.send(news)
 })
+
+// 发送email
 router.post('/sendEmail', (req, res) => {
     send().then(response => {
         res.send(response)
